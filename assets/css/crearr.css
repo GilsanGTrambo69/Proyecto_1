@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.users-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 30%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.users-form form input{
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.users-form form input[type=documento],
+.users-form form input[type=text],
+.users-form form input[type=password],
+.users-form form input[type=email]{
+    padding: 8px;
+    border:2px solid #aaa;
+    border-radius:4px;
+    outline:none;
+    transition:.3s;
+}
+
+.users-form form input[type=documento]:focus,
+.users-form form input[type=text]:focus,
+.users-form form input[type=password]:focus,
+.users-form form input[type=password]:focus{
+    border-color: #2eb54a;
+    box-shadow:0 0 6px 0 #2eb54a;
+}
+
+.users-form form input[type=submit]{
+    border: none;
+    padding: 12px 50px;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #2eb54a;
+}
+
+.users-form form input[type=submit]:hover {
+    background-color: #2eb54a;
+    color: white;
+}
+
+.users-table table{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 4px;
+}
+
+table th{
+    padding: 16px;
+    text-align: center;
+    font-size: .85em;
+}
+
+.users-table--edit{
+    background: #2eb54a;
+    padding: 6px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+.users-table--delete{
+    background: #b11e1e;
+    padding: 6px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.users-form a {
+    margin-top: 0px;
+    display: inline-block;
+    padding: 12px 50px;
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    background-color: #2eb54a; /* Color de fondo del botón */
+    border: 2px solid #2eb54a; /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px;
+    transition-duration: 0.3s;
+    position: relative;
+    left: -752px;
+    top: 63px;
+}
+
+
+.users-form a:hover {
+    background-color: #ffffff; /* Color de fondo al pasar el mouse */
+    color: rgb(0, 0, 0); /* Color de texto al pasar el mouse */
+}
+
+
+.busqueda {
+    margin-top: 0px;
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: #2eb54a;
+    background-color: #ffffff; /* Color de fondo del botón */
+    border: 2px solid ; /* Borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px;
+    
+    position: relative;
+    left: 825px;
+    top: 30px;
+}
+
+/* Estilos de la paginación */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: #2eb54a; /* Color de texto para los enlaces */
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #ddd; /* Borde alrededor de cada enlace */
+    margin: 0 4px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0; /* Fondo al pasar el mouse */
+    color: #2eb54a; /* Color de texto al pasar el rmouse */
+}
+
+.pagination a.active {
+    background-color: #2eb54a;
+    color: white;
+    border: 1px solid #2eb54a;
+    cursor: default;
+    pointer-events: none; /* Hace que el enlace activo no se le pueda volver a dar click */
+
+}

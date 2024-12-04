@@ -1,0 +1,377 @@
+/*documento mi codifo css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+body {
+    font-family: arial;
+    background-color: rgb(100, 92, 86);
+}
+
+.form-login{
+    width: 500px;
+    height: 525px;
+    font-size: large;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 200px;
+    padding-top: 600px;
+    box-shadow: 7px 13px 20px #6a6a6a;
+    padding: 20px 30px;
+    /*border-top: 4px solid #000;*/
+    color: #2eb54a;
+}
+
+.input_grande{
+    width: 440px;
+    height: 60px;
+    border: 1px solid #a4a4a4;
+    border-width: 1.5px;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #ffffff;
+    font-size: 20px;
+}
+
+.submit{
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    background: #2eb54a;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+    font-size: 22px;  /*ajusta el tamaño del texto del input submit*/
+}
+
+
+.submit:active{
+    background-color: #464545;
+}
+
+.form-login p{
+    height: 40px;
+    text-align: auto;
+
+}
+
+.form-login a{
+    color: #2eb54a;
+    font-size: 13px;
+    padding-right:100px;
+}
+
+.form-login a:hover {
+    text-decoration: underline;
+}
+
+
+.logo{
+    width: 300px;
+    height: 110px;
+}
+
+
+
+.form-registro{
+    width: 500px;
+    height: 700px;
+    font-size: large;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 600px;
+    box-shadow: 7px 13px 20px #6a6a6a;
+    padding: 20px 30px;
+    /*border-top: 4px solid #000;*/
+    color: hsl(132, 59%, 45%);
+}
+
+.input_registro{
+    width: 430px;
+    height: 37px;
+    border: 2px solid #e1e1e1;
+    border-width: 2px;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #fcfcfc;
+    color: #989898;
+    font-size: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    gap: 10px;
+}
+
+.menu-doc{
+    color: #989898;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 45px;
+    height: 35px;
+}
+
+.menu-doc:focus{
+    border-color: #04AA6D;
+    outline: none;
+}
+
+.menu-roles{
+    border: 2px solid #e1e1e1;
+    border-width: 2px;
+    margin-bottom: 15px;
+
+    background: #fcfcfc;
+    color: #989898;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 430px;
+    height: 37px;
+}
+
+.menu-roles:focus{
+    border-color: #04AA6D;
+    outline: none;
+}
+
+.button-radio{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-color: #2eb54a;
+    accent-color: hsl(132, 59%, 45%);
+}
+
+/* ####Funció sin uso#####
+.input_numdoc{
+    width: 430px;
+    height: 37px;
+    border: 1.5px solid #a4a4a4;
+    border-width: 1.5px;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #ffffff;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+}*/
+
+.text-underline{
+    text-decoration: underline;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    color: #2eb54a;
+}
+
+input::placeholder{
+    color: #989898;
+}
+
+input:focus{
+    border-color: #04AA6D;
+    outline: none;
+}
+
+
+.option:focus{
+    border-color: #04AA6D;
+    color: #6a6a6a;
+    background-color: #04AA6D;
+    outline: none;
+}
+
+.option{
+    width: 200px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    border: 2px solid #4CAF50;
+    color: #333;
+    font-size: 16px;
+}
+
+
+/*////PRIMER MODAL (MODAL DE CORREO ELECTRONICO)/////////////////////////////////////////////////////////////////*/
+
+
+
+.modal-correo {
+    top: 25%; /*Lo coloca 20% hacia abajo de la parte superior de la pantalla */
+     /*Habilitar o desabilitar */
+    position: fixed;
+    z-index: 1;
+    left: center;
+    width: 600px;
+    height: 270px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-color: #6a6a6a;
+    border-radius: 2;
+    border: 3px solid #6a6a6a;
+    box-shadow: 7px 13px 20px #6a6a6a;
+    padding: 20px 30px;
+    /*transform: translate(50%, 50%); /* Centra el modal */
+    }
+
+/*
+.modal.show {
+    display: block;
+}*/
+
+.modal-content{
+    background-color:rgb(255, 255, 255) ;
+    padding: 20px;
+    border-radius: 8px;
+    width: 2px;
+    text-align: center;
+}
+
+
+.cerrar-modal {
+    width: 250px;
+    height: 50px;
+    background-color: #ffffff;
+    border: none;
+    color: #6a6a6a;
+    border: 1px solid #a4a4a4;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.email-verificacion{
+    width: 300px;
+    height: 40px;
+    border: 1px solid #a4a4a4;
+    border-width: 1.5px;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #ffffff;
+    font-size: 20px;
+}
+
+.email-verificacion:focus{
+    border-color: #04AA6D;
+    outline: none;
+}
+
+.submit-confirmar-Correo{
+    width: 250px;
+    height: 50px;
+    background: #2eb54a;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+    font-size: 22px;  /*ajusta el tamaño del texto del input submit*/
+    border-radius: 3px;
+}
+
+.submit-confirmar-Correo:active{
+    background-color: #28813a;
+}
+
+.cerrar-modal:active{
+    background-color: rgb(169, 155, 155);
+}
+
+.green-text{
+    color: #2eb54a;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.normal-text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+/*///////Segundo Modal//////////////////////////////////////////// */
+
+.modal-codigo {
+    top: 0; /*Lo coloca 20% hacia abajo de la parte superior de la pantalla */
+     /*Habilitar o desabilitar */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-color: #6a6a6a;
+    border-radius: 2;
+    border: 3px solid #6a6a6a;
+    box-shadow: 7px 13px 20px #6a6a6a;
+    padding: 20px 30px;
+    transform: translate(50%, 50%); /* Centra el modal */
+    }
+
+.codigo-verificacion{
+    width: 380px;
+    height: 45px;
+    border: 1px solid #a4a4a4;
+    border-width: 1.5px;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.codigo-verificacion:focus{
+    border-color: #2eb54a;
+    outline: none;
+}
+
+.codigo-verificacion::placeholder{
+    text-align: center;
+}
+
+/*MODAL SE HA ENVIADO UN CODIGO  */
+
+.text-listo{
+    color: #2eb54a;
+    text-align: center;
+    font-size: 30px;
+    
+}
+/*MODAL MENSAJE DE FELICITACIONES*/
+
+
+
+/*CSS DEL BOTON VER CONTRASEÑA */
+/* Contenedor para el input y el botón */
+.input-container {
+    position: relative;
+    width: 300px; /* Ajusta el ancho según sea necesario */
+}
+
+/* Estilo del botón */
+.input-container button {
+    position: absolute;
+    right: -122px;
+    top: 37%;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    background-color: none;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Efecto hover en el botón */
+.input-container button:hover {
+    background-color: none;
+}
