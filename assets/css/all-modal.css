@@ -1,0 +1,161 @@
+/*documento mi codifo css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+body {
+    font-family: arial;
+    background-color: rgb(100, 92, 86);
+}
+
+
+/*////PRIMER MODAL (MODAL DE CORREO ELECTRONICO)/////////////////////////////////////////////////////////////////*/
+
+
+
+.modal-correo {
+    top: 0; /*Lo coloca 20% hacia abajo de la parte superior de la pantalla */
+     /*Habilitar o desabilitar */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    width: 600px;
+    height: 270px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-color: #6a6a6a;
+    border-radius: 2;
+    border: 3px solid #6a6a6a;
+    box-shadow: 7px 13px 20px #6a6a6a;
+    padding: 20px 30px;
+    transform: translate(50%, 50%); /* Centra el modal */
+    }
+
+/*
+.modal.show {
+    display: block;
+}*/
+
+.modal-content{
+    background-color:rgb(255, 255, 255) ;
+    padding: 20px;
+    border-radius: 8px;
+    width: 2px;
+    text-align: center;
+}
+
+
+.cerrar-modal {
+    width: 250px;
+    height: 50px;
+    background-color: #ffffff;
+    border: none;
+    color: #6a6a6a;
+    border: 1px solid #a4a4a4;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.email-verificacion{
+    width: 300px;
+    height: 40px;
+    border: 1px solid #a4a4a4;
+    border-width: 1.5px;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #ffffff;
+    font-size: 20px;
+}
+
+.email-verificacion:focus{
+    border-color: #04AA6D;
+    outline: none;
+}
+
+.submit-confirmar-Correo{
+    width: 250px;
+    height: 50px;
+    background: #2eb54a;
+    border: none;
+    color: white;
+    margin-bottom: 16px;
+    font-size: 22px;  /*ajusta el tamaño del texto del input submit*/
+    border-radius: 3px;
+}
+
+.submit-confirmar-Correo:active{
+    background-color: #28813a;
+}
+
+.cerrar-modal:active{
+    background-color: rgb(169, 155, 155);
+}
+
+.green-text{
+    color: #2eb54a;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.normal-text{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+/*///////Segundo Modal//////////////////////////////////////////// */
+
+.modal-codigo {
+    top: 0; /*Lo coloca 20% hacia abajo de la parte superior de la pantalla */
+     /*Habilitar o desabilitar */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    width: 600px;
+    height: 300px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-color: #6a6a6a;
+    border-radius: 2;
+    border: 3px solid #6a6a6a;
+    box-shadow: 7px 13px 20px #6a6a6a;
+    padding: 20px 30px;
+    transform: translate(50%, 50%); /* Centra el modal */
+    }
+
+.codigo-verificacion{
+    width: 380px;
+    height: 45px;
+    border: 1px solid #a4a4a4;
+    border-width: 1.5px;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.codigo-verificacion:focus{
+    border-color: #2eb54a;
+    outline: none;
+}
+
+.codigo-verificacion::placeholder{
+    text-align: center;
+}
+
+/*MODAL SE HA ENVIADO UN CODIGO  */
+
+.text-listo{
+    color: #2eb54a;
+    text-align: center;
+    font-size: 30px;
+    
+}
+/*MODAL MENSAJE DE FELICITACIONES*/
